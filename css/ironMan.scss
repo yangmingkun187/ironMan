@@ -18,10 +18,12 @@ $yellow : #E6CA88 !default;
     .head {
       position: relative;
       overflow: hidden;
+      margin: 0 auto;
       width:95px;
       height: 130px;
       border-radius: 100px;
       background-color: $red;
+      z-index: 100;
       .top {
         width: 74px;
         height: 40px;
@@ -35,18 +37,103 @@ $yellow : #E6CA88 !default;
         }
       }
       .bottom {
+        position: relative;
         border-top: 50px solid $yellow;
         border-left: 24px solid transparent;
         border-right: 25px solid transparent;
         width: 40px;
         margin: 0 auto;
+        .left-line {
+          position: absolute;
+          top: -18px;
+          left: -10px;
+          width: 17px;
+          height: 1px;
+          background-color: #000;
+          transform: rotate(-64deg);
+          -webkit-transform: rotate(-64deg);
+        }
+        .line {
+          width: 36px;
+          height: 1px;
+          background-color: #000;
+          position: absolute;
+          top: -25px;
+          left: 2px;
+        }
+        .right-line {
+          position: absolute;
+          top: -18px;
+          right: -10px;
+          width: 17px;
+          height: 1px;
+          background-color: #000;
+          transform: rotate(64deg);
+          -webkit-transform: rotate(64deg);
+        }
       }
       .middle {
+        position: relative;
         border-bottom: 25px solid $yellow;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         width: 74px;
         margin: 0 auto;
+        .eyebrow {
+          position: absolute;
+          top: -34px;
+          left: 0;
+          width: 74px;
+          height: 49px;
+          background-color: transparent;
+          border-bottom: 1px solid #000;
+          border-radius: 110px;
+          z-index: 101;
+        }
+        .left-eye {
+          position: absolute;
+          top: 14px;
+          left: 2px;
+          width: 30px;
+          height: 5px;
+          background-color: #fff;
+          z-index: 100;
+          transform: rotate(19deg);
+          -webkit-transform: rotate(19deg);
+          &:after {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: 5px;
+            left: 0;
+            border-left: 8px solid transparent;
+            border-right: 22px solid transparent;
+            border-top: 5px solid #fff;
+          }
+        }
+        .right-eye {
+          position: absolute;
+          top: 14px;
+          right: 2px;
+          width: 30px;
+          height: 5px;
+          background-color: #fff;
+          z-index: 100;
+          transform: rotate(-19deg);
+          -webkit-transform: rotate(-19deg);
+          &:after {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: 5px;
+            left: 0;
+            border-left: 22px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 5px solid #fff;
+          }
+        }
       }
       .mouth {
         width: 55px;
@@ -55,6 +142,28 @@ $yellow : #E6CA88 !default;
         margin: -10px auto;
         border-radius: 4px;
       }
+    }
+    .head-left-cover {
+      position: absolute;
+      top: 81px;
+      left: 14px;
+      width: 63px;
+      height: 30px;
+      background-color: #fff;
+      transform: rotate(72deg);
+      -webkit-transform: rotate(72deg);
+      z-index: 1000;
+    }
+    .head-right-cover {
+      position: absolute;
+      top: 81px;
+      right: 14px;
+      width: 63px;
+      height: 30px;
+      background-color: #fff;
+      transform: rotate(-72deg);
+      -webkit-transform: rotate(-72deg);
+      z-index: 1000;
     }
   }
 }
