@@ -1,1 +1,9 @@
 .idea/
+node_modules
+output
+.idea
+workSpace
+npm-debug.log
+test
+.DS_Store
+.idea/workspace.xml

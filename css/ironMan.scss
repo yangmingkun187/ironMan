@@ -136,9 +136,9 @@ $yellow : #E6CA88 !default;
         }
       }
       .mouth {
-        width: 55px;
+        width: 49px;
         height: 16px;
-        background-color: $yellow;
+        background-color: #E6CA88;
         margin: -10px auto;
         border-radius: 4px;
       }
@@ -164,6 +164,13 @@ $yellow : #E6CA88 !default;
       transform: rotate(-72deg);
       -webkit-transform: rotate(-72deg);
       z-index: 1000;
+    }
+    .body {
+      margin: 0 auto;
+      width: 40px;
+      border-left: 8px solid transparent;
+      border-right: 22px solid transparent;
+      border-top: 5px solid $red;
     }
   }
 }
