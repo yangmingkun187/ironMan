@@ -176,11 +176,34 @@ $yellow : #E6CA88 !default;
       .shoulder {
         position: absolute;
         top: -75px;
-        left: -39px;
+        left: -26px;
         width: 75px;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
         border-bottom: 15px solid $red;
+      }
+      .power {
+        position: absolute;
+        top: -52px;
+        left: 23px;
+        width: 30px;
+        height:30px;
+        border:2px solid #000000;
+        border-radius: 30px;
+        background-color: $yellow;
+        .light {
+          margin: 5px auto;
+          width: 20px;
+          height:20px;
+          border-radius: 30px;
+          background-color: #fff;
+        }
+      }
+      .plant{
+        width: 40px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 29px solid #B00005;
       }
     }
   }
