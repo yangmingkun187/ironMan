@@ -21,6 +21,7 @@ $yellow : #E6CA88 !default;
       margin: 0 auto;
       width:95px;
       height: 130px;
+      border: 1px solid #000;
       border-radius: 100px;
       background-color: $red;
       z-index: 100;
@@ -167,10 +168,10 @@ $yellow : #E6CA88 !default;
     }
     .body {
       margin: 0 auto;
-      width: 40px;
-      border-left: 8px solid transparent;
-      border-right: 22px solid transparent;
-      border-top: 5px solid $red;
+      width: 55px;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 15px solid $red;
     }
   }
 }
