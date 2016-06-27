@@ -167,11 +167,21 @@ $yellow : #E6CA88 !default;
       z-index: 1000;
     }
     .body {
-      margin: 0 auto;
-      width: 55px;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      border-bottom: 15px solid $red;
+      position: relative;
+      margin: -11px auto;
+      width: 80px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 77px solid $yellow;
+      .shoulder {
+        position: absolute;
+        top: -75px;
+        left: -39px;
+        width: 75px;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 15px solid $red;
+      }
     }
   }
 }
