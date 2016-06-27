@@ -173,6 +173,7 @@ $yellow : #E6CA88 !default;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       border-top: 77px solid $yellow;
+      z-index: 99;
       .shoulder {
         position: absolute;
         top: -75px;
@@ -248,6 +249,26 @@ $yellow : #E6CA88 !default;
           border: 2px solid #000;
         }
       }
+    }
+    .left-leg {
+      position: absolute;
+      top: 200px;
+      left: 60px;
+      width:30px;
+      height: 80px;
+      background-color: $yellow;
+      border-radius: 0 0 100% 100%;
+      z-index: 1;
+    }
+    .right-leg {
+      position: absolute;
+      top: 200px;
+      right: 60px;
+      width: 30px;
+      height: 80px;
+      background-color: $yellow;
+      border-radius: 0 0 100% 100%;
+      z-index: 1;
     }
   }
 }
